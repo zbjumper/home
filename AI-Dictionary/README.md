@@ -28,10 +28,13 @@
 
 
 
-### SFT(Supervised FineTuning)
+### SFT(Supervised Fine-Tuning)
 
-监督微调
+监督微调。
 
+SFT（Supervised Fine-Tuning）监督微调是指在源数据集上预训练一个神经网络模型，即源模型。然后创建一个新的神经网络模型，即目标模型。目标模型复制了源模型上除了输出层外的所有模型设计及其参数。这些模型参数包含了源数据集上学习到的知识，且这些知识同样适用于目标数据集。源模型的输出层与源数据集的标签紧密相关，因此在目标模型中不予采用。微调时，为目标模型添加一个输出大小为目标数据集类别个数的输出层，并随机初始化该层的模型参数。在目标数据集上训练目标模型时，将从头训练到输出层，其余层的参数都基于源模型的参数微调得到。
+
+> 1. 知乎：[人工智能大语言模型微调技术：SFT 监督微调、LoRA 微调方法、P-tuning v2 微调方法、Freeze 监督微调方法](https://zhuanlan.zhihu.com/p/643941480)
 -----
 
 
@@ -75,7 +78,12 @@
 
 低秩适配。一种常见的模型微调方法，特点是占用内存低，微调速度快。
 
+LoRA（Low-Rank Adaptation of Large Language Models），直译为大语言模型的低阶自适应。LoRA 的基本原理是冻结预训练好的模型权重参数，在冻结原模型参数的情况下，通过往模型中加入额外的网络层，并只训练这些新增的网络层参数。由于这些新增参数数量较少，这样不仅 finetune 的成本显著下降，还能获得和全模型参数参与微调类似的效果。
+
+随着大语言模型的发展，模型的参数量越来越大，比如 GPT-3 参数量已经高达 1750 亿，因此，微调所有模型参数变得不可行。LoRA 微调方法由微软提出，通过只微调新增参数的方式，大大减少了下游任务的可训练参数数量。
+
 > 1. [Paper](https://arxiv.org/abs/2106.09685)
+> 2. 知乎：[人工智能大语言模型微调技术：SFT 监督微调、LoRA 微调方法、P-tuning v2 微调方法、Freeze 监督微调方法](https://zhuanlan.zhihu.com/p/643941480)
 
 -----
 
@@ -110,8 +118,17 @@
 
 -----
 
-### P-Tuning
+### P-Tuning(Prefix-tuning)
+
+一种微调方法
+
+> 1. 知乎：[【P-Tuning】 一种自动学习 prompt pattern 的方法（附源码）](https://zhuanlan.zhihu.com/p/583022692)
 
 
+-----
 
-> 1. [【P-Tuning】 一种自动学习 prompt pattern 的方法（附源码）](https://zhuanlan.zhihu.com/p/583022692)
+### P-Tuning v2
+
+一种微调方法，是 P-Tuning 的改进版，同时借鉴了 prefix-tuning 微调的方法
+
+> 1. 知乎：[人工智能大语言模型微调技术：SFT 监督微调、LoRA 微调方法、P-tuning v2 微调方法、Freeze 监督微调方法](https://zhuanlan.zhihu.com/p/643941480)
