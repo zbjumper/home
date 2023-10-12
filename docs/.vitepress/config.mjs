@@ -24,7 +24,7 @@ export default defineConfig({
         text: '常用库',
         items: [
           { text: 'pytorch', link: '/libraries/pytorch' },
-          // { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'tqdm', link: '/libraries/tqdm' }
         ]
       }
     ],
