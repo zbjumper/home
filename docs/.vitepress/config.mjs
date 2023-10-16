@@ -37,19 +37,20 @@ export default defineConfig({
         text: '常用库',
         items: [
           { text: 'pytorch', link: '/libraries/pytorch' },
-          { text: 'tqdm', link: '/libraries/tqdm' }
+          { text: 'tqdm', link: '/libraries/tqdm' },
+          { text: 'langchain', link: '/libraries/langchain' },
         ]
       },
       {
         text: '其它',
         items: [
-          { text: '精选', link: '/others/featured' }
+          { text: '精选', link: '/others/featured' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/zbjumper/ai-learning' }
+      { icon: 'github', link: 'https://github.com/zbjumper/ai-learning' },
     ]
   }
 })
