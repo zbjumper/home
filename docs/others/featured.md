@@ -13,3 +13,13 @@
 [StarrySky](https://github.com/wuwenjie1992/StarrySky)
 
  精选了千余项目，包括机器学习、深度学习、NLP、GNN、推荐系统、生物医药、机器视觉等内容。
+
+
+
+ ## autogen
+
+[autogen](https://github.com/microsoft/autogen)
+
+ ## llamaindex
+
+ [LlamaIndex](https://www.llamaindex.ai/)

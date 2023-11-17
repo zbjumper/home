@@ -21,6 +21,12 @@ export default defineConfig({
         ]
       },
       {
+        text: 'python',
+        items: [
+          {text: 'ImportError: attempted relative import with no known parent package', link: '/python/ImportError-attempted-relative-import-with-no-known-parent-package'},
+        ]
+      },
+      {
         text: '示例',
         items: [
           { text: 'MNIST', link: '/examples/mnist' },
