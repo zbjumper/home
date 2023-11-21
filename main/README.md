@@ -50,3 +50,9 @@ npm run test:unit
 ```sh
 npm run lint
 ```
+
+## Docker Build
+
+```sh
+docker build -t zbjumper/docs-main:0.0.1 .
+```
