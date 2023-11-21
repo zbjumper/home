@@ -14,13 +14,13 @@ RUN apk add --no-cache --virtual .build-deps \
     && pnpm install --frozen-lockfile \
     && apk del .build-deps
 
-COPY docs docs
+COPY . .
 
 RUN pnpm docs:build
 
 FROM nginx:1.21-alpine as production
 
-COPY --from=builder /code/docs/.vitepress/dist /usr/share/nginx/html
+COPY --from=builder /code/.vitepress/dist /usr/share/nginx/html
 
 EXPOSE 80
 

@@ -6,7 +6,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - "7300:80"
-  web:
-    image: zbjumper/ai-learning:0.0.2
+  ai-learning:
+    build:
+      context: ai-learning/
+      dockerfile: Dockerfile
     ports:
       - "7301:80"
