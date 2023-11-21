@@ -1,6 +1,12 @@
 version: "3"
 services:
-
+  main:
+    build:
+      context: main/
+      dockerfile: Dockerfile
+    image: zbjumper/main:0.0.1
+    ports:
+      - "7300:80"
   ai-learning:
     build:
       context: ai-learning/
