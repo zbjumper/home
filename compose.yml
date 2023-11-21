@@ -1,14 +1,17 @@
 version: "3"
 services:
-  home:
-    build:
-      context: home/
-      dockerfile: Dockerfile
-    ports:
-      - "7300:80"
+
   ai-learning:
     build:
       context: ai-learning/
       dockerfile: Dockerfile
+    image: zbjumper/docs-ai-learning:1.0.0
     ports:
       - "7301:80"
+  vue3:
+    build:
+      context: vue3/
+      dockerfile: Dockerfile
+    image: zbjumper/docs-vue3:1.0.0
+    ports:
+      - "7302:80"

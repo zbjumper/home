@@ -14,7 +14,7 @@ RUN apk add --no-cache --virtual .build-deps \
     && pnpm install --frozen-lockfile \
     && apk del .build-deps
 
-COPY . /code
+COPY . .
 
 RUN pnpm docs:build
 
