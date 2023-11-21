@@ -1,1 +1,0 @@
-已迁移至[新位置](https://github.com/zbjumper/AI-Dictionary)
