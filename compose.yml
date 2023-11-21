@@ -1,0 +1,12 @@
+version: "3"
+services:
+  home:
+    build:
+      context: home/
+      dockerfile: Dockerfile
+    ports:
+      - "7300:80"
+  web:
+    image: zbjumper/ai-learning:0.0.2
+    ports:
+      - "7301:80"
