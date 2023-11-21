@@ -4,20 +4,20 @@ services:
     build:
       context: main/
       dockerfile: Dockerfile
-    image: zbjumper/main:0.0.1
+    image: zbjumper/main:0.0.2
     ports:
       - "7300:80"
   ai-learning:
     build:
       context: ai-learning/
       dockerfile: Dockerfile
-    image: zbjumper/docs-ai-learning:1.0.0
+    image: zbjumper/docs-ai-learning:1.0.1
     ports:
       - "7301:80"
   vue3:
     build:
       context: vue3/
       dockerfile: Dockerfile
-    image: zbjumper/docs-vue3:1.0.0
+    image: zbjumper/docs-vue3:1.0.1
     ports:
       - "7302:80"
