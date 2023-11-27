@@ -1,0 +1,22 @@
+{
+  "name": "zbjumper-home",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "main",
+    "ai-learnin",
+    "vue3"
+  ],
+  "scripts": {
+    "change-version": "node ./scripts/change-version.js"
+  },
+  "description": "聚合仓库",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {},
+  "packageManager": "pnpm@6.23.2+",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.10.0"
+  }
+}
