@@ -5,6 +5,7 @@ export default defineConfig({
   title: "缺氧攻略",
   description: "缺氧常用图",
   srcDir: 'src',
+  base: '/oxygen-not-included/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
