@@ -7,6 +7,9 @@ export default defineConfig({
   base: '/ai-learning/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: '首页', link: '/' },
       // { text: '开始', link: '/markdown-examples' },
