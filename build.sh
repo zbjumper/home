@@ -1,6 +1,6 @@
 # /bin/bash
 
-docker build -t zbjumper/docs-storefront:0.0.4 --push storefront
+docker build -t zbjumper/docs-storefront:0.0.5 --push storefront
 
 # docker build -t zbjumper/docs-ai-learning:0.0.2 --push ai-learning
 
