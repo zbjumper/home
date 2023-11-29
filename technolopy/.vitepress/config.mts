@@ -31,6 +31,14 @@ export default defineConfig({
           { text: '容器管理', link: '/docker/容器管理' },
         ]
       },
+      {
+        text: 'Nginx',
+        items: [
+          { text: '概述', link: '/nginx/概述' },
+          // { text: 'Nginx配置', link: '/nginx/配置' },
+          // { text: 'Nginx命令', link: '/nginx/命令' },
+        ]
+      }
       // {
       //   text: 'Examples',
       //   items: [
