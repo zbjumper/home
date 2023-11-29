@@ -25,16 +25,8 @@ RUN npm install -g pnpm
 
 
 # copy the app, note .dockerignore
-COPY public /usr/src/nuxt-app/public
-COPY server /usr/src/nuxt-app/server
-COPY .npmrc /usr/src/nuxt-app/.npmrc
-COPY package.json /usr/src/nuxt-app/package.json
-COPY pnpm-lock.yaml /usr/src/nuxt-app/pnpm-lock.yaml
-COPY tsconfig.json /usr/src/nuxt-app/tsconfig.json
-COPY nuxt.config.ts /usr/src/nuxt-app/nuxt.config.ts
-COPY app.vue /usr/src/nuxt-app/app.vue
-
-
+COPY . .
+COPY .npmrc .npmrc
 
 
 RUN pnpm i --prefer-frozen-lockfile
