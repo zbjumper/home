@@ -22,3 +22,11 @@ const props = defineProps({
   more: Object
 })
 </script>
+
+<style scoped>
+.section-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+</style>
